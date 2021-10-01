@@ -1,4 +1,4 @@
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/mcKLrrN/3.png" alt="3" border="0" /></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/mcKLrrN/3.png" alt="10" border="0" /></a>
 
 # Final Degree Project: Picard's Theorems
 
