@@ -1,5 +1,3 @@
-<img src="https://en.wikipedia.org/wiki/Picard_theorem#/media/File:Essential_singularity.png" alt="c"/>
-
 # Final Degree Project: Picard's Theorems
 
 Final Degree project created with LaTeX in 2020. 
@@ -10,9 +8,9 @@ Final Degree project created with LaTeX in 2020.
 <br>
 
 <h2 align="center">Hi 👋, I'm Mireia Gómez Diaz</h2>
-<h3 align="center">a graduated Mathematics student at the Universitat Autònoma de Barcelona.</h3>
+<h3 align="center">a graduated Mathematics student at Universitat Autònoma de Barcelona.</h3>
 
-- 🌱 I’m currently learning **Java.**
+- 🌱 I’m currently working with **Java.**
 
 - 📫 How to reach me **gomezdiazmireia@gmail.com**
 
