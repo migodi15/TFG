@@ -1,0 +1,210 @@
+\documentclass{beamer}
+\usetheme{UASLP1}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[catalan]{babel}
+%% Use any fonts you like.
+\usepackage{helvet}
+\usepackage{yhmath}
+
+\title{Els Teoremes Petit i Gran de Picard}
+\subtitle{Treball Final del Grau de Matemàtiques}
+\author{Mireia Gómez Diaz}
+\date{12 de juliol de 2021}
+%\institute{\url{m.gomezi@e-campus.uab.cat}}
+
+\newtheorem{defi}{Def.}[section]
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{corollari}{Corol$\cdot$lari}[teorema]
+
+\begin{document}
+
+\begin{frame}[plain,t]
+\titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Exposició}
+\begin{frame}
+\frametitle{Singularitat essencial}
+
+\setbeamercolor{block title}{use = structure, fg=violet!60!black, bg=violet!25!white}
+\setbeamercolor{block body}{use=structure, fg=black, bg=violet!10!white} 
+
+\begin{defi}[singularitat essencial]
+Direm que $z_0$ és una singularitat essencial de f(z) si $z_0$ és una singularitat aïllada i $z_0$ no és ni un pol ni una singularitat evitable. 
+\end{defi}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Motivació}
+\begin{frame}
+\frametitle{Motivació}
+
+\begin{teorema}[de Casoratti-Weierstrass]
+Sigui $f$ una funció holomorfa amb una singularitat essencial en $z=a$. Llavors, en cada entorn d'$a$, la imatge d'$f(z)$ és densa en $\mathbb{C}$.
+\end{teorema}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Teorema Gran de Picard}
+\begin{frame}
+\frametitle{Teorema Gran de Picard}
+
+\begin{teorema}[Teorema Gran de Picard]
+Sigui $f$ una funció holomorfa amb una singularitat essencial en $z=a$. Llavors, en cada entorn d'$a$, $f(z)$ pren tots els valors complexos possibles infinites vegades amb, com a màxim, l'excepció d'un punt.
+\end{teorema}
+
+\begin{exampleblock}{Exemple}
+\begin{center}
+    $f(z)=e^{1/z}$
+\end{center}
+\end{exampleblock}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Teorema Petit de Picard}
+\begin{frame}
+\frametitle{Teorema Petit de Picard}
+\begin{teorema}[Teorema Petit de Picard]
+Sigui $f$ una funció entera que omet dos valors, llavors $f$ és constant.
+\end{teorema}
+
+\begin{exampleblock}{Exemple}
+\begin{center}
+    $f(z)=e^z$
+\end{center}
+\end{exampleblock}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Objectius}
+\begin{frame}
+\frametitle{Objectius}
+
+L'objectiu d'aquest treball ha estat entendre i demostrar els Teoremes Petit i Gran de Picard. 
+\vspace{5mm}
+
+Per aconseguir-ho, hem fet servir eines com:
+ 
+ - El Teorema de Bloch.
+ 
+ - El Teorema de Schottky.
+
+ - Els Teoremes de Montel.
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Teorema de Bloch}
+\begin{frame}
+\frametitle{Teorema de Bloch}
+
+\begin{teorema}[de Bloch]
+Sigui $f$ una funció analítica en un domini que conté el disc tancat $\overline{D(0,1)}$ i que satisfà $f(0)=0$ i $f'(0)=1$. Llavors existeix un disc $S \subset D(0,1)$ on $f$ és injectiva i $f(S)$ conté un disc de radi $1/72$.
+\end{teorema}
+
+Nota: $1/72 = 0,013\wideparen{8}$.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Constant de Bloch}
+
+\setbeamercolor{block title}{use = structure, fg=violet!60!black, bg=violet!25!white}
+\setbeamercolor{block body}{use=structure, fg=black, bg=violet!10!white} 
+
+\begin{defi}[constant de Bloch]
+Considerem $\mathcal{F}$ el conjunt de funcions analítiques en un domini que conté el disc tancat $\overline{D(0,1)}$ i que satisfan $f(0)=0$, $f'(0)=1$. Per cada $f \in \mathcal{F}$ considerem $\beta (f)$ el suprem de tots els nombres $r$ per als quals hi ha un disc $S\subset D(0,1)$ en que $f$ és injectiva i $f(S)$ conté un disc de radi $r$. Definim la constant de Bloch com 
+$$B=\inf \{\beta (f): f\in \mathcal{F}\}.$$
+\end{defi}
+
+Nota: $0,43\leq B \leq 0,48$.
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Teorema de Schottky}
+
+\begin{frame}
+\frametitle{Teorema de Schottky}
+\begin{teorema}[de Schottky]
+Per cada $\alpha$ i $\beta$, $0<\alpha<\infty$ i $0\leq\beta\leq1$, existeix una constant $C(\alpha,\beta)$ tal que si $f$ és una funció analítica en un domini que conté el disc tancat $\overline{D(0,1)}$ i que no pren els valors $0$ ni $1$ i $|f(0)|\leq\alpha$, llavors $|f(z)|\leq C(\alpha,\beta)$ per a tot $|z|\leq\beta$.
+
+
+\end{teorema}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Teoremes de Montel}
+\begin{frame}
+\frametitle{Normalitat i equicontinuïtat}
+
+\setbeamercolor{block title}{use = structure, fg=violet!60!black, bg=violet!25!white}
+\setbeamercolor{block body}{use=structure, fg=black, bg=violet!10!white} 
+
+\begin{defi}[família normal]
+Sigui $\mathcal{F}$ una família de funcions definida sobre un conjunt obert del pla complex. Direm que $\mathcal{F}$ és normal si tota successió de $\mathcal{F}$ té una subsuccessió que convergeix uniformement sobre els compactes de l'obert.
+\end{defi}
+
+\begin{defi}[família equicontínua]
+Sigui $\mathcal{F} \subset C(G,\Omega)$. Direm que $\mathcal{F}$ és equicontínua en un punt $z_0$ si per a tot $\varepsilon>0$ existeix $\delta>0$ tal que si $|z-z_0|<\delta$ aleshores la distància entre $f(z)$ i $f(z_0)$ és menor a $\varepsilon$ per a tot $f \in \mathcal{F}$.
+\end{defi}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Teoremes de Montel}
+
+\begin{teorema}[de Montel]
+Una família de funcions holomorfes definides en un conjunt obert del pla complex és normal si, i només si, està uniformement acotada en els compactes de l'obert.
+\end{teorema}
+
+\begin{teorema}[de Montel-Caratheodory]
+Sigui $\mathcal{F}$ la família de funcions analítiques d'un domini $\Omega$ que no prenen els valors $0$ ni $1$. Llavors $\mathcal{F}$ és normal a $C(\Omega,\mathbb{C}_\infty)$.
+\end{teorema}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Resultats que se'n deriven}
+
+
+\begin{corollari}[I]
+Si $f$ té una singularitat aïllada a $z=a$ i hi ha dos nombres complexos que $f$ no pren infinitament sovint, llavors $z=a$ és un pol o una singularitat evitable.
+\end{corollari}
+
+\begin{corollari}[II]
+Si $f$ és una funció entera no polinomial, llavors $f$ pren tots els valors complexos un nombre infinit de vegades excepte, com a molt, un valor.
+\end{corollari}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\Large{\centerline{Moltes gràcies!}}
+\end{frame}
+
+\end{document}
